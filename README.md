@@ -31,3 +31,6 @@
 
 # No terminal rodar o comando:
 # python -m alembic revision --autogenerate -m "comentario"
+
+# Depois rodar o comando
+# python -m alembic upgrade head

@@ -14,8 +14,9 @@ class Cursos(Base):
     id = Column(Integer, primary_key=True, autoincrement=True)
     nome = Column(String(100), nullable=False)
     carga_horaria = Column(Integer, nullable=False)
+    descricao = Column(String(150))
 
-    alunos = relationship("Aluno", back_populates="curso")
+    alunos = relationship("Alunos", back_populates="curso")
 
     def __repr__(self):
         return f"Curso = id: {self.id} - Nome: {self.nome} - Carga Hóraria: {self.carga_horaria}"
